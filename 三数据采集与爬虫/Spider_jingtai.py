@@ -22,7 +22,7 @@ headers = {
 }
 
 
-for i in range(1, 2):
+for i in range(1, 30):
     time.sleep(random.randint(3, 10))
     url = 'https://www.lagou.com/zhaopin/jiqixuexi/{}/?filterOption=2'.format(i)
     print(url)
