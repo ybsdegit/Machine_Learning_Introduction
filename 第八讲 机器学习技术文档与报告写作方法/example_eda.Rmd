@@ -1,0 +1,43 @@
+---
+title: "example_eda"
+author: "louwill"
+date: "2018年10月21日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## RMarkdown数据操作流程示例：EDA
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+## 读入数据
+
+读入数据并查看数据概况：
+```{python echo=TRUE}
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = pd.read_csv('./lagou_preprocessed.csv', encoding='gbk')
+print(data.shape)
+print(data.describe())
+print(data['position_name'].value_counts())
+```
+
+
+
+
+
+
+
+
+
+

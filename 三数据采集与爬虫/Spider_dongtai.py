@@ -114,4 +114,4 @@ def recruit_detail(position_id):
 if __name__ == '__main__':
     positions = lagou_dynamic_crawl()
     data = pd.DataFrame(positions)
-    data.to_csv('machine_learning_hz_job3.csv')
+    data.to_csv('machine_learning_hz_job5.csv')
